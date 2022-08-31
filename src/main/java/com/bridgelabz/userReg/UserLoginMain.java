@@ -13,6 +13,16 @@ public class UserLoginMain {
         else
             return false;
     }
+    public static boolean LastNameValidator(String name)
+    {
+        String y="^[A-Z]{1}[a-z]{2,}$";
+        Pattern pattern = Pattern.compile(y);
+        Matcher matcher =  pattern.matcher(name);
+        if(matcher.find())
+            return true;
+        else
+            return false;
+    }
 
 
 
